@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+</head>
+<body>
+    <form name="calculator">
+        <h2>calculator</h2>
+        <table>
+            <td colspan="4">
+                <div type="text" name="display" id="display"disabled>0</div>
+            </td>
+        <tr>
+            <td><input type ="button" name = "one" value="1" onclick="disp('1')"></td>
+            <td><input type ="button" name = "two" value="2" onclick="disp('2')"></td>
+            <td><input type ="button" name = "three" value="3" onclick="disp('3')"></td>
+            <td><input type ="button" class="operator" name="plus" value="+" onclick="disp('+')"></td>
+        </tr>
+        <tr>
+            <td><input type ="button" name = "four" value="4" onclick="disp('4')"></td>
+            <td><input type ="button" name = "five" value="5" onclick="disp('5')"></td>
+            <td><input type ="button" name = "six" value="6" onclick="disp('6')"></td>
+            <td><input type ="button" class="operator" name="minus" value="-" onclick="disp('-')"></td>
+        </tr>
+        <tr>
+            <td><input type ="button" name = "seven" value="7" onclick="disp('7')"></td>
+            <td><input type ="button" name = "eight" value="8" onclick="disp('8')"></td>
+            <td><input type ="button" name = "nine" value="9" onclick="disp('9')"></td>
+            <td><input type ="button" class="operator" name="mul" value="*" onclick="disp('*')"></td>
+        </tr>
+        <tr>
+            <td><input type ="button" class="operator" id="mod" name="mod" value="%" onclick="disp('%')"></td>
+            <td><input type ="button" name="zero" value="0" onclick="disp('0')"></td>
+            <td><input type ="button" class="operator" id="div" name="div" value="/" onclick="disp('/')"></td>
+            <td><input type="button"  id="delete" name="delete" value="<" onclick="del()"></td>
+        </tr>
+        <tr>
+            <td><input type ="button" name="equal" id="equal" value="=" onclick="solve()"></td>
+            <td><input type ="button" class="operator" id="dot" name="dot" value="." onclick="disp('.')"></td>
+            <td><input type ="button" name="zerozero" value="00" onclick="disp('00')"></td>
+            <td><input type ="button" id="clear" name="clear" value="AC" onclick="clearscreen()"></td>
+        </tr>
+    </table>
+</form>
+<link rel="stylesheet" href="styles.CSS"/>
+<script type="text/javascript" src="script.js" ></script>
+</body>
+</html>

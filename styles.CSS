@@ -1,0 +1,163 @@
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 90vh;
+   background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+
+}
+h2{
+    color: lavender;
+    font-style: oblique;
+    font-family: cursive;
+}
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#eb8960, #eb0069);
+    clip-path:polygon(30% 10%, 50% 40%, 30% 75%, 10% 40%);    
+}
+body::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f50202, #525acf);
+    clip-path: circle(15% at 65% 75%);
+}
+form{
+    padding-top: 10px; 
+    backdrop-filter: saturate(100%) blur(10px);
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+
+}
+table{
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.2);  
+    backdrop-filter: blur(5px);
+    backdrop-filter: blur(8px);
+    background-color: rgb(228 228 228 / 15%);
+    box-shadow: inset 0 0 0 200px rgb(255 255 255 / 9%);
+    border-top: 1px solid rgba(225, 225, 225, 0.2);
+    border-left: 1px solid rgba(225, 225, 225, 0.2);
+    border-right: 1px solid rgba(225, 225, 225, 0.2);
+    width: 250px;
+    max-width: 250px;
+    height: 325px;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 1px;
+    backdrop-filter: blur(10px);
+}
+input{
+    height:65px;
+    color: #fff;
+    width: 70px;
+    background: transparent;
+    border-radius: 12px;
+    margin-top: 15px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+input:hover{
+    height:65px;
+    color: #fff;
+    width: 70px;
+    border-radius: 12px;
+    margin-top: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    top: 4px;
+    float: left;
+}
+input:active{
+    float: left;
+    position: relative;
+    display: block;
+}
+#display{
+    overflow-wrap: break-word;
+    color:aqua;
+    width: 300px;
+    font-size: 35px;
+    text-align: right;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+#display:hover{
+    width: 300px;
+    font-size: 35px;
+    text-align: right;
+    position:static;
+}
+#display:active{
+    top: 5px;
+    width: 300px;
+    font-size: 35px;
+    text-align: right;
+}
+
+#clear{
+    color: rgb(255, 13, 13);
+    width: 70px;
+    font-weight: bolder;
+
+}
+#clear:hover{
+    font-weight: bolder;
+    width: 70px;
+    height: 65px;
+    float: right;
+}
+    
+#div{
+    width: 70px;
+}
+#delete{
+    background-color:rgba(255, 255, 255, 0.123);
+    color: rgb(255, 0, 0);
+    width: 70px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight:bolder;
+}
+#delete:hover{
+    font-weight: bolder;
+    color: rgb(247, 8, 8);
+}
+#equal{
+    background-color:greenyellow;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    width: 70px;
+    height: 65px;
+}
+#equal:hover{
+    color: #000;
+    font-weight: bolder;
+    width: 70px;
+    float:right;
+}
+#mod{
+    width: 70px;
+}
+#dot{
+    font-weight: bolder;
+}
